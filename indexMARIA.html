@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Por uma Outra Globalização — Milton Santos</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f4f7;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.10);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1d3557;
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    .autor {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    h2 {
+      color: #1d3557;
+      margin-top: 30px;
+      font-size: 22px;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 17px;
+      margin-bottom: 22px;
+    }
+
+    .controles {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+
+    button {
+      border: none;
+      border-radius: 10px;
+      padding: 13px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #1d3557;
+      color: white;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.85;
+      transform: translateY(-1px);
+    }
+
+    #status {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 15px auto;
+        padding: 10px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+
+      <h1>POR UMA OUTRA GLOBALIZAÇÃO</h1>
+
+      <div class="autor">
+        Milton Santos
+      </div>
+
+      <div class="controles">
+        <button onclick="iniciarLeitura()">🔊 Ouvir texto</button>
+        <button onclick="pararLeitura()">⏹ Parar</button>
+      </div>
+
+      <div id="status">
+        Clique em "Ouvir texto" para começar.
+      </div>
+
+      <p>
+        Na obra, Milton Santos distingue três dimensões do processo de globalização: o que nos fazem crer que o mundo é, o que ele efetivamente é e o que poderia vir a ser, respectivamente, a globalização como fábula, perversidade e possibilidade.
+      </p>
+
+      <h2>A Globalização como Fábula</h2>
+
+      <p>
+        Sustentada pela ideia de “aldeia global”, é a faceta da Globalização em que nos fazem crer. O desenvolvimento de tecnologias de informação e comunicação e a aceleração dos transportes parecem produzir um mundo com distâncias cada vez menores e integração igualitária dos indivíduos em uma sociedade mundial. Embora o mundo se torne tecnicamente cognoscível, o conhecimento não é igualmente acessível ou produzido por todos. Assim, a Fábula é a transformação de possibilidades técnicas reais em uma imagem de integração universal que oculta suas condições desiguais de realização.
+      </p>
+
+      <h2>A Globalização Perversa</h2>
+
+      <p>
+        Corresponde à Globalização concretamente existente, marcada por unicidade da técnica, convergência dos momentos, crescente cognoscibilidade do planeta e constituição de um “motor único” (expansão global da mais-valia), que intensificam os fluxos e aceleram as relações econômicas e sociais, mas são apropriados desigualmente.
+      </p>
+
+      <p>
+        A perversidade se manifesta na articulação entre a tirania da informação e do dinheiro: a informação, apesar de poder ampliar o conhecimento sobre o mundo, passa a ser produzida e difundida seletivamente, em favor de um “pensamento único”, e o dinheiro, principalmente através das finanças, torna-se central na organização da vida social.
+      </p>
+
+      <p>
+        Competitividade e consumo ganham centralidade enquanto a solidariedade perde espaço, expressando o Globalitarismo, a ordem vigente como universal e restringe alternativas a ela. A perversidade, assim, não está na técnica ou na integração mundial, mas na forma seletiva como estas são apropriadas e subordinadas a determinados interesses.
+      </p>
+
+      <h2>A Globalização como Possibilidade</h2>
+
+      <p>
+        A possibilidade de uma outra globalização advém da apropriação social da técnica, gerando uma integração mais efetiva do mundo. Se a unicidade técnica é utilizada para a concentração e a fragmentação, ela também poderia favorecer formas ampliadas de solidariedade e participação, obtendo-se outra organização do espaço e da vida coletiva.
+      </p>
+
+      <p>
+        A globalização como possibilidade representa, assim, a passagem do pensamento único à consciência universal: a integração mundial poderia deixar de servir apenas à reprodução de uma ordem econômica e tornar-se condição para transformação.
+      </p>
+
+    </div>
+  </div>
+
+  <script>
+
+    const texto = `
+      Por uma Outra Globalização.
+
+      Milton Santos.
+
+      Na obra, Milton Santos distingue três dimensões do processo de globalização: o que nos fazem crer que o mundo é, o que ele efetivamente é e o que poderia vir a ser, respectivamente, a globalização como fábula, perversidade e possibilidade.
+
+      A Globalização como Fábula.
+
+      Sustentada pela ideia de aldeia global, é a faceta da Globalização em que nos fazem crer. O desenvolvimento de tecnologias de informação e comunicação e a aceleração dos transportes parecem produzir um mundo com distâncias cada vez menores e integração igualitária dos indivíduos em uma sociedade mundial. Embora o mundo se torne tecnicamente cognoscível, o conhecimento não é igualmente acessível ou produzido por todos. Assim, a Fábula é a transformação de possibilidades técnicas reais em uma imagem de integração universal que oculta suas condições desiguais de realização.
+
+      A Globalização Perversa.
+
+      Corresponde à Globalização concretamente existente, marcada por unicidade da técnica, convergência dos momentos, crescente cognoscibilidade do planeta e constituição de um motor único, expansão global da mais-valia, que intensificam os fluxos e aceleram as relações econômicas e sociais, mas são apropriados desigualmente.
+
+      A perversidade se manifesta na articulação entre a tirania da informação e do dinheiro: a informação, apesar de poder ampliar o conhecimento sobre o mundo, passa a ser produzida e difundida seletivamente, em favor de um pensamento único, e o dinheiro, principalmente através das finanças, torna-se central na organização da vida social.
+
+      Competitividade e consumo ganham centralidade enquanto a solidariedade perde espaço, expressando o Globalitarismo, a ordem vigente como universal e restringe alternativas a ela. A perversidade, assim, não está na técnica ou na integração mundial, mas na forma seletiva como estas são apropriadas e subordinadas a determinados interesses.
+
+      A Globalização como Possibilidade.
+
+      A possibilidade de uma outra globalização advém da apropriação social da técnica, gerando uma integração mais efetiva do mundo. Se a unicidade técnica é utilizada para a concentração e a fragmentação, ela também poderia favorecer formas ampliadas de solidariedade e participação, obtendo-se outra organização do espaço e da vida coletiva.
+
+      A globalização como possibilidade representa, assim, a passagem do pensamento único à consciência universal: a integração mundial poderia deixar de servir apenas à reprodução de uma ordem econômica e tornar-se condição para transformação.
+    `;
+
+    function iniciarLeitura() {
+
+      if (!window.speechSynthesis) {
+        document.getElementById("status").textContent =
+          "Seu navegador não suporta leitura de texto.";
+        return;
+      }
+
+      speechSynthesis.cancel();
+
+      const fala = new SpeechSynthesisUtterance(texto);
+
+      fala.lang = "pt-BR";
+      fala.rate = 0.88;
+      fala.pitch = 1;
+
+      const vozes = speechSynthesis.getVoices();
+
+      let voz = vozes.find(function(v) {
+        return v.lang === "pt-BR";
+      });
+
+      if (!voz) {
+        voz = vozes.find(function(v) {
+          return v.lang.toLowerCase().startsWith("pt");
+        });
+      }
+
+      if (voz) {
+        fala.voice = voz;
+      }
+
+      fala.onstart = function() {
+        document.getElementById("status").textContent =
+          "🔊 Leitura em andamento...";
+      };
+
+      fala.onend = function() {
+        document.getElementById("status").textContent =
+          "✅ Leitura concluída.";
+      };
+
+      fala.onerror = function() {
+        document.getElementById("status").textContent =
+          "⚠️ Erro ao iniciar a leitura.";
+      };
+
+      speechSynthesis.speak(fala);
+    }
+
+    function pararLeitura() {
+
+      if (window.speechSynthesis) {
+        speechSynthesis.cancel();
+      }
+
+      document.getElementById("status").textContent =
+        "⏹ Leitura interrompida.";
+    }
+
+  </script>
+
+</body>
+</html>
